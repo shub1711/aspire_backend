@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Repository {
+  id             Int      @id @default(autoincrement())
+  name           String   @unique
+  latestRelease  Release?
+}
+
+model Release {
+  id             Int      @id @default(autoincrement())
+  version        String
+  publishedAt    DateTime
+  seen           Boolean  @default(false)
+  releaseNotes   String?  // Optional release notes field
+  repositoryId   Int      @unique
+  repository     Repository @relation(fields: [repositoryId], references: [id])
+}
