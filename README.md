@@ -5,6 +5,10 @@ PostgreSQL for database management
 Octokit for interacting with GitHub API
 GraphQL for querying and mutating data
 
+# Loom Videos for demo
+https://www.loom.com/share/0cfc30f9dcf641e7b79cad5c5b3cc7dc
+https://www.loom.com/share/ec050f4a6baf4de29ac1c9b547587d20
+
 # Features
 
 GraphQL API: Exposes endpoints to manage repositories, retrieve release information, and update seen statuses.
