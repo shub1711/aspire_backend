@@ -1,11 +1,11 @@
 # Backend
-# Technologies
+
 Node.js with GraphQL (Apollo Server or GraphQL Yoga)
 PostgreSQL for database management
 Octokit for interacting with GitHub API
 GraphQL for querying and mutating data
-# Features
 
+# Features
 
 GraphQL API: Exposes endpoints to manage repositories, retrieve release information, and update seen statuses.
 
@@ -13,7 +13,7 @@ PostgreSQL Database: Stores repository metadata, release details, and user-speci
 
 GitHub API Integration: Utilizes Octokit to fetch repository and release data from GitHub.
 
-Technology Stack
+# Technology Stack
 
 Node.js: Backend runtime environment.
 
