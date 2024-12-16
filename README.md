@@ -1,6 +1,6 @@
 # Backend
 
-Node.js with GraphQL (Apollo Server or GraphQL Yoga)
+Node.js with GraphQL 
 PostgreSQL for database management
 Octokit for interacting with GitHub API
 GraphQL for querying and mutating data
