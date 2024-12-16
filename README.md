@@ -25,15 +25,36 @@ Octokit: GitHub API client library.
 
 Prisma: Optional ORM for managing PostgreSQL schema and queries.
 
+# Installation and Setup
+
 Clone the repository:
 
-bash
-Copy code
-git clone
-cd aspire_backend
-npm install
-Set up PostgreSQL database:
+git clone 
+cd backend
 
-Install PostgreSQL and create a new database.
-Set up environment variables for database connection and GitHub API credentials in .env file.
+Install dependencies:
+
+npm install
+
+Configure environment variables:
+
+Create a .env file and provide the following:
+
+DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database_name>
+GITHUB_TOKEN=<your_github_token>
+
+Run database migrations:
+
+npx prisma migrate dev
+
+Start the development server:
+
 npm run start
+
+
+
+
+
+
+
+
